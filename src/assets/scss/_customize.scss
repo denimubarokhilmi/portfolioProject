@@ -1,3 +1,6 @@
+@use './utils/breakpoints' as *;
+@use './utils/root' as *;
+
 // padding
 .section-padding {
     padding: 150px 0;
@@ -885,6 +888,7 @@ textarea.form-control {
     padding-bottom: 400px;
 }
 // media breakpoint
+
 @media #{$md} {
     .mt--65 {
         margin-top: 0;

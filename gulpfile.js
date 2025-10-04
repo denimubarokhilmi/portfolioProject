@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const includeHTML = require('gulp-file-include');
@@ -34,7 +35,7 @@ function copyAssets() {
                 'src/assets/css/**/*',
                 'src/assets/fonts/**/*',
                 'src/assets/images/**/*',
-                'src/assets/imgs/**/*',                
+                'src/assets/imgs/**/*',
                 'src/assets/img/**/*',
                 'src/assets/js/**/*',
             ],
@@ -55,11 +56,11 @@ gulp.task('build', gulp.series(includeHtml, beautifyHtml, buildStyles, copyAsset
 // Initialize BrowserSync and track changes
 gulp.task(
     'dev',
-    gulp.series('build', function () {        
+    gulp.series('build', function () {
         // Watch tasks
         gulp.watch('src/views/**/*.html', gulp.series(includeHtml));
         gulp.watch('src/assets/scss/**/**/*', gulp.series(buildStyles));
-        gulp.watch(['src/assets/css/**/*', 'src/assets/fonts/**/*', 'src/assets/images/**/*','src/assets/imgs/**/*', 'src/assets/img/**/*', 'src/assets/js/**/*'], copyAssetsChanged);
+        gulp.watch(['src/assets/css/**/*', 'src/assets/fonts/**/*', 'src/assets/images/**/*', 'src/assets/imgs/**/*', 'src/assets/img/**/*', 'src/assets/js/**/*'], copyAssetsChanged);
         browserSync.init({
             server: {
                 baseDir: 'dist',

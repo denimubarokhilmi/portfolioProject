@@ -30,27 +30,27 @@ Table of contents
     23. Footer
 ==============*/
 // theme utilitiles
-@use 'utils/breakpoints';
-@use 'utils/root';
+@use './utils/breakpoints' as *;
+@use './utils/root' as *;
 // Components
-@use 'components/reboot';
-@use 'components/animation';
-@use 'components/buttons';
-@use 'components/collapse';
-@use 'components/dropdown';
-@use 'components/typography';
-@use 'components/colors';
-@use 'components/imageRevealHover';
-@use 'components/mobile-menu';
-@use 'components/form';
-@use 'components/hero';
-@use 'components/offcanvas';
-@use 'components/navbar';
-@use 'components/preloader';
-@use 'customize';
-@use 'components/other';
-@use 'components/responsive';
-@use 'sections/footer-1';
-@use 'sections/home-page-2';
-@use 'sections/home-page-3';
-@use 'components/dark-mode';
+@use './components/reboot';
+@use './components/animation';
+@use './components/buttons';
+@use './components/collapse';
+@use './components/dropdown';
+@use './components/typography';
+@use './components/colors';
+@use './components/imageRevealHover';
+@use './components/mobile-menu';
+@use './components/form';
+@use './components/hero';
+@use './components/offcanvas';
+@use './components/navbar';
+@use './components/preloader';
+@use './customize';
+@use './components/other';
+@use './components/responsive';
+@use './sections/footer-1';
+@use './sections/home-page-2';
+@use './sections/home-page-3';
+@use './components/dark-mode';
